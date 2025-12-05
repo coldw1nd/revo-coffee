@@ -3,6 +3,7 @@
 
 ## Используемые технологии
 * HTML5
+* CSS3
 
 ## Ссылка на опубликованную страницу
 [Открыть сайт на GitHub Pages](https://coldw1nd.github.io/revo-coffee/)
