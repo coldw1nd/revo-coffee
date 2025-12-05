@@ -5,179 +5,197 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рево Кофе&nbsp;&mdash; Твой персональный кофе</title>
     <link rel="icon" type="image/x-icon" href="assets/icons/IC_coffee.png">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <a href="#">
-                <img src="assets/img/LOGO.png" alt="Логотип Рево Кофе">
-            </a>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="assets/img/LOGO.png" alt="Логотип Рево Кофе">
+                </a>
+            </div>
+            
+            <div class="header__cart">
+                <img src="assets/icons/shopping-cart-3.png" alt="Иконка корзины">
+                <span class="header__cart-count">2</span>
+            </div>
         </div>
 
-        <h1>ВАШ <br> ПЕРСОНАЛЬНЫЙ <br> КОФЕ</h1>
-        
-        <img src="assets/img/banner.png" alt="Баннер кофейни">
-        
-        <div class="cart">
-            <img src="assets/icons/shopping-cart-3.png" alt="Иконка корзины">
-            <span>2</span>
+        <div class="header__content">
+            <h1 class="header__title">ВАШ <br> ПЕРСОНАЛЬНЫЙ <br> КОФЕ</h1>
+            <img class="header__banner" src="assets/img/banner.png" alt="Баннер кофейни">
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">ГЛАВНАЯ</a></li>
-            <li><a href="#">КОФЕ</a></li>
-            <li><a href="#">ФИЛЬТРЫ</a></li>
-            <li><a href="#">КОМБО-НАБОРЫ</a></li>
-            <li><a href="#">ПОДАРКИ</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">ГЛАВНАЯ</a></li>
+            <li class="nav__item"><a class="nav__link" href="#features">КОФЕ</a></li>
+            <li class="nav__item"><a class="nav__link" href="#favorite">ФИЛЬТРЫ</a></li>
+            <li class="nav__item"><a class="nav__link" href="#combo">КОМБО-НАБОРЫ</a></li>
+            <li class="nav__item"><a class="nav__link" href="#giftset">ПОДАРКИ</a></li>
+            <li class="nav__item"><a class="nav__link" href="#footer">КОНТАКТЫ</a></li>
         </ul>
     </nav>
 
-    <main>
+    <main class="main">
 
-        <section id="features">
-            <p>Ваш персональный кофе</p>
-            <h2>КОФЕ СОЗДАЕТ ВАШУ ОСНОВУ</h2>
+        <section id="features" class="section features">
+            <p class="section__subtitle">Ваш персональный кофе</p>
+            <h2 class="section__title">КОФЕ СОЗДАЕТ ВАШУ ОСНОВУ</h2>
             
-            <ul>
-                <li>
-                    <img src="assets/icons/ic.png" alt="Источник">
-                    <h3>Источник</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий.</p>
+            <ul class="features__list">
+                <li class="features__item">
+                    <img class="features__icon" src="assets/icons/ic.png" alt="Источник">
+                    <h3 class="features__name">Источник</h3>
+                    <p class="features__text">Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий.</p>
                 </li>
-                <li>
-                    <img src="assets/icons/ic_1.png" alt="Качество">
-                    <h3>Качество</h3>
-                    <p>Повседневная практика показывает, что консультация с&nbsp;широким активом влечет за&nbsp;собой.</p>
+                <li class="features__item">
+                    <img class="features__icon" src="assets/icons/ic_1.png" alt="Качество">
+                    <h3 class="features__name">Качество</h3>
+                    <p class="features__text">Повседневная практика показывает, что консультация с&nbsp;широким активом влечет за&nbsp;собой.</p>
                 </li>
-                <li>
-                    <img src="assets/icons/ic_2.png" alt="Виды зерен">
-                    <h3>Виды зерен</h3>
-                    <p>Разнообразный и&nbsp;богатый опыт начало повседневной работы по&nbsp;формированию позиции.</p>
+                <li class="features__item">
+                    <img class="features__icon" src="assets/icons/ic_2.png" alt="Виды зерен">
+                    <h3 class="features__name">Виды зерен</h3>
+                    <p class="features__text">Разнообразный и&nbsp;богатый опыт начало повседневной работы по&nbsp;формированию позиции.</p>
                 </li>
-                <li>
-                    <img src="assets/icons/ic_3.png" alt="Приготовление">
-                    <h3>Приготовление</h3>
-                    <p>С другой стороны рамки и место обучения кадров позволяет оценить значение форм.</p>
+                <li class="features__item">
+                    <img class="features__icon" src="assets/icons/ic_3.png" alt="Приготовление">
+                    <h3 class="features__name">Приготовление</h3>
+                    <p class="features__text">С другой стороны рамки и место обучения кадров позволяет оценить значение форм.</p>
                 </li>
             </ul>
         </section>
 
-        <section id="favorite">
-            <p>Выберите свой любимый</p>
-            <h2>ИДЕАЛЬНЫЙ ВКУС</h2>
+        <section id="favorite" class="section favorite">
+            <p class="section__subtitle">Выберите свой любимый</p>
+            <h2 class="section__title">ИДЕАЛЬНЫЙ ВКУС</h2>
 
-            <article>
-                <img src="assets/img/image_1.png" alt="Рево Утренний">
-                <p>99.000</p>
-                <h3>Рево Утренний</h3>
-                <p>Задача организации, в&nbsp;особенности&nbsp;же постоянный количественный рост и&nbsp;сфера активности.</p>
-                <button>КУПИТЬ</button>
-                <a href="#">ПОДРОБНЕЕ</a>
-            </article>
+            <div class="catalog-grid">
+                <article class="card">
+                    <img class="card__image" src="assets/img/image_1.png" alt="Рево Утренний">
+                    <p class="card__price">99.000</p>
+                    <h3 class="card__title">Рево Утренний</h3>
+                    <p class="card__desc">Задача организации, в&nbsp;особенности&nbsp;же постоянный количественный рост и&nbsp;сфера активности.</p>
+                    <div class="card__actions">
+                        <button class="button card__button">КУПИТЬ</button>
+                        <a class="card__link" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </article>
 
-            <article>
-                <img src="assets/img/image_2.png" alt="Рево Ежедневный">
-                <p>85.000</p>
-                <h3>Рево Ежедневный</h3>
-                <p>Идейные соображения высшего порядка, а&nbsp;также рамки и&nbsp;место обучения кадров требуют.</p>
-                <button>КУПИТЬ</button>
-                <a href="#">ПОДРОБНЕЕ</a>
-            </article>
+                <article class="card">
+                    <img class="card__image" src="assets/img/image_2.png" alt="Рево Ежедневный">
+                    <p class="card__price">85.000</p>
+                    <h3 class="card__title">Рево Ежедневный</h3>
+                    <p class="card__desc">Идейные соображения высшего порядка, а&nbsp;также рамки и&nbsp;место обучения кадров требуют.</p>
+                    <div class="card__actions">
+                        <button class="button card__button">КУПИТЬ</button>
+                        <a class="card__link" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </article>
 
-            <article>
-                <img src="assets/img/image_3.png" alt="Рево Ориджин">
-                <p>139.000</p>
-                <h3>Рево Ориджин</h3>
-                <p>Равным образом рамки и&nbsp;место обучения кадров обеспечивает широкому кругу участие.</p>
-                <button>КУПИТЬ</button>
-                <a href="#">ПОДРОБНЕЕ</a>
-            </article>
+                <article class="card">
+                    <img class="card__image" src="assets/img/image_3.png" alt="Рево Ориджин">
+                    <p class="card__price">139.000</p>
+                    <h3 class="card__title">Рево Ориджин</h3>
+                    <p class="card__desc">Равным образом рамки и&nbsp;место обучения кадров обеспечивает широкому кругу участие.</p>
+                    <div class="card__actions">
+                        <button class="button card__button">КУПИТЬ</button>
+                        <a class="card__link" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </article>
 
-            <article>
-                <img src="assets/img/image_4.png" alt="Рево Насыщенный">
-                <p>75.000</p>
-                <h3>Рево Насыщенный</h3>
-                <p>Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции.</p>
-                <button>КУПИТЬ</button>
-                <a href="#">ПОДРОБНЕЕ</a>
-            </article>
+                <article class="card">
+                    <img class="card__image" src="assets/img/image_4.png" alt="Рево Насыщенный">
+                    <p class="card__price">75.000</p>
+                    <h3 class="card__title">Рево Насыщенный</h3>
+                    <p class="card__desc">Не&nbsp;следует, однако забывать, что начало повседневной работы по&nbsp;формированию позиции.</p>
+                    <div class="card__actions">
+                        <button class="button card__button">КУПИТЬ</button>
+                        <a class="card__link" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section id="giftset">
-            <p>Лучший подарок для друга</p>
-            <h2>ПОДАРОЧНЫЙ НАБОР</h2>
+        <section id="giftset" class="section gift">
+            <p class="section__subtitle">Лучший подарок для друга</p>
+            <h2 class="section__title">ПОДАРОЧНЫЙ НАБОР</h2>
 
-            <article>
-                <img src="assets/img/pr-0018-r.png" alt="Набор кофе">
+            <article class="gift-card">
+                <img class="gift-card__image" src="assets/img/pr-0018-r.png" alt="Набор кофе">
                 
-                <div>
-                    <p>285.000</p>
-                    <h3>Набор «Кофе Вьетнама»</h3>
-                    <p>Также как сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. Господа, социально-экономическое развитие говорит о&nbsp;возможностях прогресса профессионального сообщества.</p>
+                <div class="gift-card__content">
+                    <p class="gift-card__price">285.000</p>
+                    <h3 class="gift-card__title">Набор «Кофе Вьетнама»</h3>
+                    <p class="gift-card__desc">Также как сложившаяся структура организации представляет собой интересный эксперимент проверки новых предложений. Господа, социально-экономическое развитие говорит о&nbsp;возможностях прогресса профессионального сообщества.</p>
                     
-                    <ul>
-                        <li>
+                    <ul class="gift-card__features">
+                        <li class="gift-card__feature-item">
                             <img src="assets/icons/IC_coffee.png" alt="Зерно">
-                            Тип зерна <br> Робуста Бленд
+                            <div>Тип зерна <br> <strong>Робуста Бленд</strong></div>
                         </li>
-                        <li>
+                        <li class="gift-card__feature-item">
                             <img src="assets/icons/IC_Mountain.png" alt="Горы">
-                            Высота <br> 700—800 м
+                            <div>Высота <br> <strong>700—800 м</strong></div>
                         </li>
                     </ul>
 
-                    <button>КУПИТЬ</button>
-                    <a href="#">ПОДРОБНЕЕ</a>
+                    <div class="gift-card__actions">
+                        <button class="button gift-card__button">КУПИТЬ</button>
+                        <a class="gift-card__link" href="#">ПОДРОБНЕЕ</a>
+                    </div>
                 </div>
-                
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                </ul>
             </article>
         </section>
 
-        <section id="combo">
-            <p>Ваш персональный кофе</p>
-            <h2>КОМБО НАБОРЫ</h2>
+        <section id="combo" class="section combo">
+            <p class="section__subtitle">Ваш персональный кофе</p>
+            <h2 class="section__title">КОМБО НАБОРЫ</h2>
 
-            <article>
-                <img src="assets/img/image_5.png" alt="Комбо Насыщенный">
-                <p>147.000 <del>155.000</del></p>
-                <h3>Комбо Рево Насыщенный</h3>
-                <p>Таким образом консультация с&nbsp;широким активом представляет собой интересный эксперимент.</p>
-                <button>КУПИТЬ</button>
-                <a href="#">ПОДРОБНЕЕ</a>
-            </article>
+            <div class="catalog-grid">
+                <article class="card">
+                    <img class="card__image" src="assets/img/image_5.png" alt="Комбо Насыщенный">
+                    <p class="card__price">147.000 <del class="card__old-price">155.000</del></p>
+                    <h3 class="card__title">Комбо Рево Насыщенный</h3>
+                    <p class="card__desc">Таким образом консультация с&nbsp;широким активом представляет собой интересный эксперимент.</p>
+                    <div class="card__actions">
+                        <button class="button card__button">КУПИТЬ</button>
+                        <a class="card__link" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </article>
 
-            <article>
-                <img src="assets/img/image_6.png" alt="Комбо Ежедневный">
-                <p>156.000 <del>165.000</del></p>
-                <h3>Комбо Рево Ежедневный</h3>
-                <p>Товарищи! Постоянный количественный рост и&nbsp;сфера нашей активности требуют от&nbsp;нас.</p>
-                <button>КУПИТЬ</button>
-                <a href="#">ПОДРОБНЕЕ</a>
-            </article>
+                <article class="card">
+                    <img class="card__image" src="assets/img/image_6.png" alt="Комбо Ежедневный">
+                    <p class="card__price">156.000 <del class="card__old-price">165.000</del></p>
+                    <h3 class="card__title">Комбо Рево Ежедневный</h3>
+                    <p class="card__desc">Товарищи! Постоянный количественный рост и&nbsp;сфера нашей активности требуют от&nbsp;нас.</p>
+                    <div class="card__actions">
+                        <button class="button card__button">КУПИТЬ</button>
+                        <a class="card__link" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </article>
 
-            <article>
-                <img src="assets/img/image_7.png" alt="Комбо Медовый">
-                <p>275.000 <del>260.000</del></p>
-                <h3>Комбо Рево Медовый</h3>
-                <p>Разнообразный и&nbsp;богатый опыт начало повседневной работы по&nbsp;формированию позиции.</p>
-                <button>КУПИТЬ</button>
-                <a href="#">ПОДРОБНЕЕ</a>
-            </article>
+                <article class="card">
+                    <img class="card__image" src="assets/img/image_7.png" alt="Комбо Медовый">
+                    <p class="card__price">275.000 <del class="card__old-price">260.000</del></p>
+                    <h3 class="card__title">Комбо Рево Медовый</h3>
+                    <p class="card__desc">Разнообразный и&nbsp;богатый опыт начало повседневной работы по&nbsp;формированию позиции.</p>
+                    <div class="card__actions">
+                        <button class="button card__button">КУПИТЬ</button>
+                        <a class="card__link" href="#">ПОДРОБНЕЕ</a>
+                    </div>
+                </article>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <p>&copy;&nbsp;Рево Кофе Вьетнам&nbsp;&mdash; 2018</p>
+    <footer id="footer" class="footer">
+        <p class="footer__copyright">&copy;&nbsp;Рево Кофе Вьетнам&nbsp;&mdash; 2018</p>
     </footer>
 
 </body>
